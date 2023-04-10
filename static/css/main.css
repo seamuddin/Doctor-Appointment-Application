@@ -84,9 +84,9 @@ margin-bottom: 0px;
 
 .footer-section
 {
-    background: #004D49;
-        width: 100%;
-    position: absolute;
+       background: #004D49;
+    width: 100%;
+    position: fixed;
     bottom: 0;
 }
 .footer-menu ul
