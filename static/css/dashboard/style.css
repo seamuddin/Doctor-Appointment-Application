@@ -1,0 +1,9 @@
+.sidebar
+{
+    position: fixed;
+}
+.main-panel
+{
+    position: absolute;
+    right: 0;
+}

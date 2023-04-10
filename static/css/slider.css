@@ -1,0 +1,12 @@
+.carousel-item
+{
+    height: 65vh;
+}
+.mean-container .mean-bar::before{
+						content:"SSD Academy"
+					}
+
+.carousel-indicators
+{
+	display: none!important;
+}

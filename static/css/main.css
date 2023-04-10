@@ -1,0 +1,214 @@
+.header
+{
+    background: #004D49;
+}
+.header h2
+{
+
+}
+.heading-title
+{
+    color: #ffff;
+    text-align: center;
+
+}
+
+.menu ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.menu ul li
+{
+
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu ul li a
+{
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.left-logo
+{
+    display: flex;
+    align-item: center;
+    justify-content: center;
+}
+.signup a
+{
+          color: #fff;
+
+    background: #CD7A4A;
+    border-radius: 15px;
+    border: 2px solid #CD7A4A;
+}
+.signup a:hover
+{
+    text-decoration: none;
+    background: transparent;
+}
+.container-fluid
+{
+padding: 0!important;
+margin: 0!important;
+overflow: hidden;
+}
+
+.doctor-section
+{
+    background: #004D49;
+}
+.section-header
+{
+        color: #ffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor-section .card-img-top
+{
+    height: 320px
+}
+.doctor-section p{
+margin-bottom: 0px;
+}
+
+.footer-section
+{
+    background: #004D49;
+}
+.footer-menu ul
+{
+        list-style: none;
+    padding: 0;
+}
+.footer-menu .social-media i
+{
+    padding: 5px;
+}
+.footer-menu{
+    color: #ffff;
+}
+.footer-contact p
+{
+margin: 0;
+}
+.footer-middle
+{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer-middle h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-contact p
+{
+    color: #ffff;
+}
+.footer-contact
+{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.login-section .container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.login-section .login
+{
+               width: 492px;
+    background: #fff;
+    position: absolute;
+    top: 100px;
+}
+.login-section .login .content
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    flex-direction: row;
+}
+.login-section .login .login-form
+{
+           padding: 15px;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.login-section .login .login-form input
+{
+          margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #CFCFCF;
+    background-color: transparent!important;
+}
+.login-section .login .login-form button
+{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background: #EA6417;
+    border: 1px solid #EA6417;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.login-section .login .login-form input:focus
+{
+        box-shadow: none!important;
+    background-color: transparent!important;
+    border: 1px solid #EA6417;
+
+}
+.login-section .login img
+{
+        width: 100px;
+    border-bottom: 3px solid gray;
+}
+.login-section .login h2
+{
+    font-weight: 600;
+font-size: 14px;
+line-height: 25px;
+}
+.login-section .login .patient
+{
+          padding: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #CFCFCF;
+    border-radius: 10px;
+}
+.login-section .login .receptionist
+{
+        padding: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #CFCFCF;
+    border-radius: 10px;
+}

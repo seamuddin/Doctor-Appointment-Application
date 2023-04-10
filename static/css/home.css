@@ -1,0 +1,112 @@
+body
+{
+    background-color: #ffffff;
+}
+
+.flip-section {
+    top: -90px;
+    position: relative;
+}
+
+/* home-about-section */
+.home-about-section-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.home-about-section-details h5 {
+    color: #35B56A;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Muli', sans-serif;
+}
+
+.home-about-section-details h4 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Muli', sans-serif;
+}
+
+.home-about-section-details a {
+    width: 150px;
+}
+
+.home-about-section-img {
+    height: 300px;
+}
+
+/* home-about-section end */
+
+/* home-service-section */
+.service-container
+{
+    margin-top: 3rem;
+    background: url('/static/img/about-us-img.jpg')no-repeat center center/ cover;
+
+}
+.service-container-img
+{
+       background-color: #0000007a;
+
+}
+.home-service-section-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-service-section-details h5 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Muli', sans-serif;
+}
+
+.home-service-section-details h4 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Muli', sans-serif;
+    color: #ffffff;
+}
+
+.home-service-section-details a {
+    width: 150px;
+}
+
+.home-service-section-card
+{
+    padding: 15px;
+    align-items: center;
+}
+.home-service-section-card i
+{
+    font-size: 52px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.home-service-section-card h4
+{
+        text-transform: capitalize;
+        text-align: center;
+}
+.home-service-section-card p {
+    text-transform: capitalize;
+    text-align: center;
+}
+.home-service-card-section .col
+{
+        padding: 15px;
+}
+/* home-service-section end */
