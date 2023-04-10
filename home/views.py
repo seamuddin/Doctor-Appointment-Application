@@ -4,8 +4,9 @@ from django.shortcuts import render
 
 def index(request, **kwargs):
     if request.user:
-        if request.user.user_type == '1':
-            return render(request, 'patient.html')
+        if request.user.user_type:
+            if request.user.user_type == '1':
+                return render(request, 'patient.html')
 
     return render(request, 'index.html')
 
