@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def index(request, **kwargs):
     if request.user:
-        if request.user.user_type:
+        if hasattr(request.user, 'user_type'):
             if request.user.user_type == '1':
                 return render(request, 'patient.html')
 
