@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Medical App</title>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}">
@@ -11,14 +11,19 @@
 <body style="background: #004d4975">
 <section class="login-section">
     <form action="" method="post">
-                {% csrf_token %}
-
+        {% csrf_token %}
         <div class="container">
             <div class="login">
-                {% if error %}
-                <div class="alert alert-danger" role="alert">
-                    {{ error }}
+
+                {% if form.errors %}
+                    {% for field in form %}
+                    {% if field.errors %}
+                    <div class="alert alert-danger" role="alert">
+                        {{ field.errors|striptags }}
                     </div>
+                    {% endif %}
+                    {% endfor %}
+
                 {% endif %}
                 <div class="content">
                     <div class="patient" id="patient_check">
@@ -34,9 +39,15 @@
                     </div>
                 </div>
                 <div class="login-form">
+                    <label for="">First Name:</label>
+                    <input type="text" class="form-control" name="first_name">
+                    <label for="">Last Name:</label>
+                    <input type="text" class="form-control" name="last_name">
+                    <label for="">Email:</label>
                     <input type="email" class="form-control" name="email">
+                    <label for="">Password:</label>
                     <input type="password" class="form-control" name="password">
-                    No Account ? <a href="{% url 'signup' %}">Sign In </a> &nbsp; &nbsp; <button>Login</button>
+                    <button>Sign up</button>
                 </div>
             </div>
         </div>
@@ -61,6 +72,9 @@
          $("#patient_radio").attr('checked', false);
     $("#receptionist_radio").attr('checked', true);
     })
+
+
+
 
 
 </script>

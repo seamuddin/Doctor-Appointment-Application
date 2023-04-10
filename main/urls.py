@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from system.urls import urlpatterns
+from medical_user.urls import urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
