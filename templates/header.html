@@ -27,6 +27,10 @@
                 <li><a href="">Contact Us</a></li>
                 <li class="signup"><a href="{% url 'signup' %}">Sign Up</a></li>
                 <li class="signup"><a href="{% url 'login' %}">Sign In</a></li>
+
+                {% if request.user.user_type %}
+                <li class="signup"><a href="{% url 'logout' %}">Logout</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>

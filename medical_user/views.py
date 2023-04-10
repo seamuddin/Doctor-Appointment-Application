@@ -4,6 +4,13 @@ from medical_user.forms import CustomUserForm
 from medical_user.models import CustomUser
 from django.db import transaction
 from django.contrib.auth import authenticate, login as auth_login
+from django.contrib.auth import logout as logout_new
+
+
+def logout(request, **kwargs):
+    logout_new(request)
+
+    return redirect('/')
 
 
 def login(request, **kwargs):
@@ -19,10 +26,7 @@ def login(request, **kwargs):
             # User authentication failed, handle the error
             # You can display an error message to the user or take any other appropriate action
             error = 'This user is not available'
-            return render(request, 'login.html', {'error':error})
-
-
-
+            return render(request, 'login.html', {'error': error})
 
     return render(request, 'login.html')
 
@@ -49,7 +53,7 @@ def signup(request, **kwargs):
 
 
         else:
-            return render(request, 'signup.html',{'form': form})
+            return render(request, 'signup.html', {'form': form})
 
             # user = CustomUser()
             # user.user_type = user_type
@@ -62,8 +66,4 @@ def signup(request, **kwargs):
     else:
         form = CustomUserForm()
 
-
-    return render(request, 'signup.html',{'form': form})
-
-
-
+    return render(request, 'signup.html', {'form': form})
