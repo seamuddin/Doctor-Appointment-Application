@@ -24,13 +24,24 @@
                 <li><a href="">Patient Information</a></li>
                 <li><a href="">Doctor</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
+                  {% if request.user.user_type == '2' %}
+
+                 <li><a href="{% url 'appointment-add' %}">Appintment Add</a></li>
+                {% endif %}
+
+                 {% if request.user.user_type%}
+
+                 <li><a href="{% url 'appointment' %}">Appintment List</a></li>
+                {% endif %}
+
                 <li class="signup"><a href="{% url 'signup' %}">Sign Up</a></li>
                 <li class="signup"><a href="{% url 'login' %}">Sign In</a></li>
 
                 {% if request.user.user_type %}
                 <li class="signup"><a href="{% url 'logout' %}">Logout</a></li>
                 {% endif %}
+
+
             </ul>
         </div>
     </div>

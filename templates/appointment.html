@@ -27,11 +27,14 @@
     </tr>
   </thead>
   <tbody>
+  {% for i in appintment %}
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>22-01-22</td>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{ i.doctor_name }}</td>
+      <td>{{ i.data }}</td>
     </tr>
+
+  {% endfor %}
 
   </tbody>
 </table>
